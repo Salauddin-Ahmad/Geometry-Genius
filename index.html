@@ -26,15 +26,17 @@
                         <p class="text-center text-2xl">Area (A) = 0.5 x b x h</p>
 
                         <div class=" flex flex-row">
-                            <input id="triangle-base" class="w-20 text-2xl rounded-sm p-2"  type="text" placeholder="b" />
+                            <input id="triangle-base" class="w-20 text-2xl rounded-sm p-2" type="text"
+                                placeholder="b" />
                             <span class="mr-4 ml-2">cm</span>
 
-                            <input id="triangle-height" class="w-20 text-2xl rounded-sm p-2" type="text" name="" id="" placeholder="h">
+                            <input id="triangle-height" class="w-20 text-2xl rounded-sm p-2" type="text" name="" id=""
+                                placeholder="h">
                             <span class="ml-2">cm</span>
                         </div>
 
                         <div>
-                            <p class="text-2xl">Area: <span id="triangle-area" ></span>
+                            <p class="text-2xl">Area: <span id="triangle-area"></span>
                                 <span>cm <sup>2</sup></span>
                             </p>
                         </div>
@@ -47,28 +49,71 @@
 
 
                 <!-- rectangle card -->
-                <div class="card w-full bg-base-100 shadow-xl pt-6">
-                    <figure><img class="w-[90%] " src="./images/rectangle.png"
-                            alt="Shoes" /></figure>
+                <div class="card w-56 bg-base-100 shadow-xl pt-6">
+                    <figure><img class="w-[90%] " src="./images/rectangle.png" alt="Shoes" /></figure>
                     <div class="card-body">
                         <h2 class="card-title text-center">Rectangle!</h2>
                         <p class="text-center text-2xl"> Area (A) = w x l</p>
-                        <div class="flex ">
-                            <input placeholder="l" type="text" name="" id="" class="w-20 text-2xl rounded-sm p-2" >
-                             <span>cm</span>
-                            <input placeholder="w" type="text" name="" id="" class="w-20 text-2xl rounded-sm p-2">
-                             <span>cm</span>
+                        <div class="flex">
+                            <input placeholder="l" type="text" name="" id="rectangle-length"
+                                class="w-20 text-2xl rounded-sm p-2">
+                            <span>cm</span>
+                            <input placeholder="w" type="text" name="" id="rectangle-width"
+                                class="w-20 text-2xl rounded-sm p-2">
+                            <span>cm</span>
                         </div>
+                        <div>
+                            <p class="text-2xl">Area <span id="rectangle-area">0</span>
+                                <span>cm <sup>2</sup></span>
+                            </p>
+                        </div>
+
                         <div class="card-actions justify-end">
                             <button onclick="calculateRectangleArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
 
-                <!-- triangle card -->
+                <!-- Parrallelogram card -->
                 <div class="card w-56 bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                            alt="Shoes" /></figure>
+                    <figure><img src="./images/parallelogram.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Parrallelogram!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Rhombus card -->
+                <div class="card w-56 bg-base-100 shadow-xl">
+                    <figure><img src="./images/rhombus.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Rhombus!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pentagon card -->
+                <div class="card w-56 bg-base-100 shadow-xl">
+                    <figure><img src="./images/pentagon.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Pentagon!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ellipse card -->
+                <div class="card w-56 bg-base-100 shadow-xl">
+                    <figure><img src="./images/ellipse.png" alt="Shoes" /></figure>
                     <div class="card-body">
                         <h2 class="card-title">Shoes!</h2>
                         <p>If a dog chews shoes whose shoes does he choose?</p>
@@ -78,27 +123,17 @@
                     </div>
                 </div>
 
-
-                <!-- triangle card -->
-                <div class="card w-56 bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                            alt="Shoes" /></figure>
-                    <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
-                        </div>
-                    </div>
-                </div>
             </div>
+
             <!-- area calcuation container -->
             <div class="w-56 border-2 border-gray-700 rounded-md">
                 <h3 class="text-3xl text-center p-4">Area Calculation</h3>
             </div>
+
         </div>
+
     </main>
-    <script src="./scripts/trianglecalculate.js" ></script>
+    <script src="./scripts/triangle.calculate.js"></script>
     <script src="./scripts/rectangle-area.js"></script>
 </body>
 
